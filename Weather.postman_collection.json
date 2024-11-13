@@ -1,0 +1,281 @@
+{
+	"info": {
+		"_postman_id": "b7524ffe-c21b-490f-bdc0-354991befc70",
+		"name": "Weather",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "37462009"
+	},
+	"item": [
+		{
+			"name": "Current Weather",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/current.json?key={{API_KEY}}&q=36.81897, 10.16579",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "36.81897, 10.16579"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Current Weather Lang",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/current.json?key={{API_KEY}}&q=Cairo&lang=ar",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"current.json"
+					],
+					"query": [
+						{
+							"key": "key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Cairo"
+						},
+						{
+							"key": "lang",
+							"value": "ar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forecast",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/forecast.json?Key={{API_KEY}}&q=Aswan&days=2",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"forecast.json"
+					],
+					"query": [
+						{
+							"key": "Key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Aswan"
+						},
+						{
+							"key": "days",
+							"value": "2"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forecast aqi",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/forecast.json?Key={{API_KEY}}&q=Aswan&days=1&lang=ar&aqi=yes",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"forecast.json"
+					],
+					"query": [
+						{
+							"key": "Key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Aswan"
+						},
+						{
+							"key": "days",
+							"value": "1"
+						},
+						{
+							"key": "lang",
+							"value": "ar"
+						},
+						{
+							"key": "aqi",
+							"value": "yes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forecast alerts",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/forecast.json?Key={{API_KEY}}&q=Italy&days=1&lang=ar&aqi=yes&alerts=yes",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"forecast.json"
+					],
+					"query": [
+						{
+							"key": "Key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Italy"
+						},
+						{
+							"key": "days",
+							"value": "1"
+						},
+						{
+							"key": "lang",
+							"value": "ar"
+						},
+						{
+							"key": "aqi",
+							"value": "yes"
+						},
+						{
+							"key": "alerts",
+							"value": "yes"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Forecast Task",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/forecast.json?Key={{API_KEY}}&q=Italy&dt=2024-11-11&lang=ar&hour=18",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"forecast.json"
+					],
+					"query": [
+						{
+							"key": "Key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Italy"
+						},
+						{
+							"key": "dt",
+							"value": "2024-11-11"
+						},
+						{
+							"key": "lang",
+							"value": "ar"
+						},
+						{
+							"key": "hour",
+							"value": "18"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Search or Autocomplete",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{Base_URL}}/search.json?Key={{API_KEY}}&q=Alexandria",
+					"host": [
+						"{{Base_URL}}"
+					],
+					"path": [
+						"search.json"
+					],
+					"query": [
+						{
+							"key": "Key",
+							"value": "{{API_KEY}}"
+						},
+						{
+							"key": "q",
+							"value": "Alexandria"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "API_KEY",
+			"value": "418af7e3b0b8446f832155732240611",
+			"type": "string"
+		},
+		{
+			"key": "Base_URL",
+			"value": " http://api.weatherapi.com/v1",
+			"type": "string"
+		}
+	]
+}
